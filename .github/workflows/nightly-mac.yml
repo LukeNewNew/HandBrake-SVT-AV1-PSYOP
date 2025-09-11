@@ -23,7 +23,7 @@ jobs:
 
     - name: Install build dependencies
       run: |
-        for formula in autoconf automake libtool pkg-config cmake nasm; do
+        for formula in autoconf automake libtool pkg-config cmake nasm meson; do
           if ! brew list $formula &>/dev/null; then
             brew install $formula
           else
