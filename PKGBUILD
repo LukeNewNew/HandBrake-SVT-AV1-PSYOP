@@ -70,11 +70,6 @@ options=('!lto') # https://bugs.archlinux.org/task/72600
 source=("HandBrake::git+https://github.com/LukeNewNew/HandBrake.git" "HandBrake-SVT-AV1-PSYOP::git+https://github.com/LukeNewNew/HandBrake-SVT-AV1-PSYOP.git")
 sha256sums=('SKIP' 'SKIP')
 
-pkgver() {
-  cd "${srcdir}/HandBrake"
-  git describe --long | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
-}
-
 setup_compiler() {
   export CC="/usr/bin/clang"
   unset CFLAGS
