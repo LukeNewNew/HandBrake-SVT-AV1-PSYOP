@@ -127,5 +127,5 @@ jobs:
           prerelease: true
           replacesArtifacts: false
           allowUpdates: false
-          tag: mac
+          tag: fast_mac
           token: ${{ secrets.GITHUB_TOKEN }}

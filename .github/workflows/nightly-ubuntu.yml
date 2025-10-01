@@ -118,5 +118,5 @@ jobs:
           prerelease: true
           replacesArtifacts: false
           allowUpdates: false
-          tag: ubuntu
+          tag: fast_ubuntu
           token: ${{ secrets.GITHUB_TOKEN }}

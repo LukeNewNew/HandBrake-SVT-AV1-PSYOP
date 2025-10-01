@@ -116,5 +116,5 @@ jobs:
           prerelease: true
           replacesArtifacts: false
           allowUpdates: false
-          tag: flatpak
+          tag: fast_flatpak
           token: ${{ secrets.GITHUB_TOKEN }}
